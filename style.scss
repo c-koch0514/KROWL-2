@@ -1,0 +1,128 @@
+@mixin fs($fs, $lh) {
+  font-size: $fs + rem;
+  line-height: $lh;
+}
+$cream: #fffff3;
+
+body {
+  /* どんなにブラウザ幅が狭くなっても最低1,000pxのコンテンツの幅を確保する */
+  min-width: 1000px;
+}
+
+// header
+header {
+  position: relative;
+
+  .header-visual {
+    width: 100%;
+  }
+  .header-logo {
+    width: 297px;
+    position: absolute;
+    bottom: 6rem;
+    left: 6rem;
+  }
+}
+// end header
+
+// main
+b {
+  @include fs(3.2, 1);
+}
+main {
+  .message {
+    padding: 10rem 0;
+    background-color: $cream;
+    text-align: center;
+    p {
+      @include fs(1.6, 2);
+      margin-top: 5rem;
+    }
+  }
+
+  .design {
+    background-image: url("./images/bg-content.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10rem 2rem;
+    text-align: center;
+
+    b {
+      color: #ffffff;
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+    .ideas {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 5rem;
+      background-color: rgba(#000000, 0.3);
+
+      .idea {
+        display: flex;
+        img {
+          width: 50%;
+        }
+        .idea-read {
+          width: 50%;
+          background-color: $cream;
+          text-align: left;
+          padding: 4rem 2rem 0 2rem;
+          b {
+            color: #333333;
+            @include fs(2, 1.75);
+            margin-bottom: 0;
+          }
+          p {
+            margin-top: 2rem;
+            @include fs(1.6, 1.75);
+          }
+        }
+      }
+    }
+  }
+
+  .company {
+    padding: 10rem 0;
+    text-align: center;
+    background-color: $cream;
+
+    p {
+      @include fs(1.6, 2);
+      margin: 5rem 0 7rem 0;
+    }
+    img {
+      width: 15rem;
+      height: 15rem;
+    }
+    img:nth-child(n + 2) {
+      margin-left: 6rem;
+    }
+  }
+}
+// end main
+
+// footer
+footer {
+  height: 6rem;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+
+  p {
+    text-align: center;
+    @include fs(1.2, 5);
+  }
+  nav {
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    a {
+      color: #ffffff;
+      margin-left: 2rem;
+    }
+  }
+}
+// end footer

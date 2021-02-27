@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  /* どんなにブラウザ幅が狭くなっても最低1,000pxのコンテンツの幅を確保する */
+  min-width: 1000px;
+}
+
+header {
+  position: relative;
+}
+
+header .header-visual {
+  width: 100%;
+}
+
+header .header-logo {
+  width: 297px;
+  position: absolute;
+  bottom: 6rem;
+  left: 6rem;
+}
+
+b {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+main .message {
+  padding: 10rem 0;
+  background-color: #fffff3;
+  text-align: center;
+}
+
+main .message p {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 5rem;
+}
+
+main .design {
+  background-image: url("./images/bg-content.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+main .design b {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+main .design .ideas {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .design .ideas .idea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .design .ideas .idea img {
+  width: 50%;
+}
+
+main .design .ideas .idea .idea-read {
+  width: 50%;
+  background-color: #fffff3;
+  text-align: left;
+  padding: 4rem 2rem 0 2rem;
+}
+
+main .design .ideas .idea .idea-read b {
+  color: #333333;
+  font-size: 2rem;
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+main .design .ideas .idea .idea-read p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+main .company {
+  padding: 10rem 0;
+  text-align: center;
+  background-color: #fffff3;
+}
+
+main .company p {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 5rem 0 7rem 0;
+}
+
+main .company img {
+  width: 15rem;
+  height: 15rem;
+}
+
+main .company img:nth-child(n + 2) {
+  margin-left: 6rem;
+}
+
+footer {
+  height: 6rem;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 5;
+}
+
+footer nav {
+  position: absolute;
+  top: 40%;
+  right: 2rem;
+}
+
+footer nav a {
+  color: #ffffff;
+  margin-left: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
